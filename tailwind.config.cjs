@@ -13,7 +13,7 @@ module.exports = {
       '2xl': 32
     },
     
-    color: {
+    colors: {
       black: '#000',
       white: '#FFF',
       
