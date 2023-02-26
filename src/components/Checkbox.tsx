@@ -3,7 +3,7 @@ import { Check } from 'phosphor-react'
 
 export interface CheckboxProps extends CheckboxPrimitive.CheckboxProps {}
 
-export function Checkbox(props: CheckboxProps) {
+export function Checkbox (props: CheckboxProps): JSX.Element {
   return (
     <CheckboxPrimitive.Root className="w-6 h-6 p-[2px] bg-gray-800 rounded" {...props}>
       <CheckboxPrimitive.Indicator asChild>

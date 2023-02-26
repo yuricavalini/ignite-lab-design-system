@@ -1,18 +1,18 @@
-import { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from './Heading';
+import { type Meta, type StoryObj } from '@storybook/react'
+import { Heading, type HeadingProps } from './Heading'
 
 export default {
   title: 'Components/Heading',
   component: Heading,
   args: {
     children: 'Lorem ipsum.',
-    size: 'md',
+    size: 'md'
   },
   argTypes: {
     size: {
       options: ['sm', 'md', 'lg'],
       control: {
-        type: 'inline-radio',
+        type: 'inline-radio'
       }
     }
   }
@@ -42,7 +42,7 @@ export const CustomComponent: StoryObj<HeadingProps> = {
   argTypes: {
     children: {
       table: {
-        disable: true,
+        disable: true
       }
     },
     asChild: {

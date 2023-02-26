@@ -1,19 +1,17 @@
-import { FormEvent, useState } from 'react';
-import { Envelope } from 'phosphor-react';
-import axios from 'axios';
-import { Button } from '../components/Button';
-import { Checkbox } from '../components/Checkbox';
-import { Heading } from '../components/Heading';
-import { Text } from '../components/Text';
-import { TextInput } from '../components/TextInput';
-import { Lock } from 'phosphor-react';
-import { Logo } from '../Logo';
+import { type FormEvent, useState } from 'react'
+import axios from 'axios'
+import { Button } from '../components/Button'
+import { Checkbox } from '../components/Checkbox'
+import { Heading } from '../components/Heading'
+import { Text } from '../components/Text'
+import { TextInput } from '../components/TextInput'
+import { Envelope, Lock } from 'phosphor-react'
+import { Logo } from '../Logo'
 
-
-export function SignIn() {
+export function SignIn (): JSX.Element {
   const [isUserSignedIn, setIsUserSignedIn] = useState(false)
 
-  async function handleSignIn(event: FormEvent) {
+  async function handleSignIn (event: FormEvent): Promise<void> {
     event.preventDefault()
 
     await axios.post('/sessions', {

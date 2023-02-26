@@ -1,16 +1,16 @@
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { clsx } from 'clsx'
 
 export interface HeadingProps {
-  size?: 'sm' | 'md' | 'lg';
-  children: ReactNode;
-  asChild?: boolean;
-  className?: string;
+  size?: 'sm' | 'md' | 'lg'
+  children: ReactNode
+  asChild?: boolean
+  className?: string
 }
 
-export function Heading({ size = 'md', children, asChild, className }: HeadingProps) {
-  const Comp = asChild ? Slot : 'h2';
+export function Heading ({ size = 'md', children, asChild, className }: HeadingProps): JSX.Element {
+  const Comp = asChild ? Slot : 'h2'
 
   return (
     <Comp className={clsx(
@@ -18,7 +18,7 @@ export function Heading({ size = 'md', children, asChild, className }: HeadingPr
       {
         'text-lg': size === 'sm',
         'text-xl': size === 'md',
-        'text-2xl': size === 'lg',
+        'text-2xl': size === 'lg'
       },
       className
     )}

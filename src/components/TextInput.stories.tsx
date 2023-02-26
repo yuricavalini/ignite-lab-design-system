@@ -1,6 +1,7 @@
-import { Meta, StoryObj } from '@storybook/react'
-import { EnvelopeSimple } from 'phosphor-react';
-import { TextInput, TextInputRootProps } from './TextInput';
+/* eslint-disable react/jsx-key */
+import { type Meta, type StoryObj } from '@storybook/react'
+import { EnvelopeSimple } from 'phosphor-react'
+import { TextInput, type TextInputRootProps } from './TextInput'
 
 export default {
   title: 'Components/TextInput',
@@ -16,7 +17,7 @@ export default {
   argTypes: {
     children: {
       table: {
-        disable: true,
+        disable: true
       }
     }
   }
