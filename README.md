@@ -29,6 +29,12 @@ Project developed during the **NLW (Next Level Week)** taught by [Rocketseat](ht
 
 - [x] Users can:
   - [x] Browse and interact with the different reusable components available.
+- [x] Components:
+  - [x] Text
+  - [x] Heading
+  - [x] Button
+  - [x] Checkbox
+  - [x] Input
 
 ---
 
@@ -63,7 +69,7 @@ Also it's nice to have an editor to work with the code like [VSCode](https://cod
 ```bash
 
 # Clone this repository
-$ git clone git@github.com:yuricavalini/ignite-lab-design-system.git
+$ git clone https://github.com/yuricavalini/ignite-lab-design-system.git
 
 # Access the project folder in your terminal/cmd
 $ cd ignite-lab-design-system
